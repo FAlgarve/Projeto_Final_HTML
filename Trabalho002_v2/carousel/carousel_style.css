@@ -1,0 +1,60 @@
+#mainCarousel {
+  --carousel-button-bg: #fff;
+
+  --carousel-button-width: 48px;
+  --carousel-button-height: 48px;
+
+  --carousel-button-svg-width: 27px;
+  --carousel-button-svg-height: 27px;
+  --carousel-button-svg-stroke-width: 1.5;
+
+  --carousel-button-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px
+      0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px
+      4px -1px;
+}
+
+.carousel__button.is-prev {
+  display: none;
+  left: 70px;
+}
+
+.carousel__button.is-next {
+  display: none;
+  right: 70px;
+}
+
+.carousel__slide {
+  width: 100%;
+  padding: 0;
+  line-height: 0;
+}
+.carousel__slide img {
+  width: 100%;
+}
+
+#navCarousel .carousel__slide {
+  width: 100px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#navCarousel {
+  margin-top: -30px;
+}
+
+#navCarousel .carousel__slide img{
+  border-radius: 5px;
+}
+
+#navCarousel .carousel__slide.is-nav-selected:before{
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #000, #131313);
+  opacity: 0.3;
+}

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+    <!--carrossel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css'>
+    <link rel="stylesheet" href="carousel/carousel_style.css">
+    <!--carrousel-->
+
+    <!--side menu-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="side-menu/side-menu_style.css">
+    <!--side menu-->
+
+    <!--grid-->
+
+    <!--grid-->
+
+    <title>Trabalho Final</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="imgs/CodeSync_logo_V2_1_BG.svg" class="logo"></img>
+            <ul class="nav-bar">
+                <li class="nav-bar_item"><a href="">Inicio</a></li>
+                <li class="nav-bar_item"><a href="">Mensagens</a></li>
+                <li class="nav-bar_item"><a href="">Anuncios</a></li>
+                <li class="nav-bar_item"><a href="#">Perfis</a></li>
+                <li class="nav-bar_item"><a href="">Muda Vendedor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mainCarousel" class="carousel">
+        <div class="carousel__slide">
+            <img data-lazy-src="https://lipsum.app/id/1/1920x600" />
+        </div>
+        <div class="carousel__slide">
+            <img data-lazy-src="https://lipsum.app/id/2/1920x600" />
+        </div>
+        <div class="carousel__slide">
+            <img data-lazy-src="https://lipsum.app/id/3/1920x600" />
+        </div>
+    </div>
+
+    <div id="navCarousel" class="carousel">
+        <div class="carousel__slide">
+            <img data-lazy-src="https://lipsum.app/id/1/100x60" />
+        </div>
+        <div class="carousel__slide">
+            <img data-lazy-src="https://lipsum.app/id/2/100x60" />
+        </div>
+        <div class="carousel__slide">
+            <img data-lazy-src="https://lipsum.app/id/3/100x60" />
+        </div>
+    </div>
+
+    <style>
+        @-webkit-keyframes bounce {
+            0% {
+                -webkit-transform: translateY(-100%);
+            }
+
+            5% {
+                -webkit-transform: translateY(-100%);
+            }
+
+            15% {
+                -webkit-transform: translateY(0);
+                padding: 4px auto;
+            }
+
+            20% {
+                -webkit-transform: translateY(-80%);
+            }
+
+            25% {
+                -webkit-transform: translateY(0%);
+                padding: 4px auto;
+            }
+
+            30% {
+                -webkit-transform: translateY(-70%);
+            }
+
+            35% {
+                -webkit-transform: translateY(0%);
+                padding: 5px auto;
+            }
+
+            40% {
+                -webkit-transform: translateY(-60%);
+            }
+
+            45% {
+                -webkit-transform: translateY(0%);
+                padding: 5px auto;
+            }
+
+            50% {
+                -webkit-transform: translateY(-50%);
+            }
+
+            55% {
+                -webkit-transform: translateY(0%);
+                padding: 6px auto;
+            }
+
+            60% {
+                -webkit-transform: translateY(-30%);
+            }
+
+            65% {
+                -webkit-transform: translateY(0%);
+                padding: 6px auto;
+            }
+
+            70% {
+                -webkit-transform: translateY(-15%);
+            }
+
+            75% {
+                -webkit-transform: translateY(0);
+                padding: 8px auto;
+            }
+
+            80% {
+                -webkit-transform: translateY(-10%);
+            }
+
+            85% {
+                -webkit-transform: translateY(0);
+                padding: 8px auto;
+            }
+
+            90% {
+                -webkit-transform: translateY(-5%);
+            }
+
+            95% {
+                -webkit-transform: translateY(0);
+                padding: 10px;
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                padding: 10px;
+            }
+        }
+
+        /* Mozilla Firefox 15 below */
+
+        @-moz-keyframes bounce {
+            0% {
+                -moz-transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            5% {
+                -moz-transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            15% {
+                -moz-transform: translateY(0);
+                padding-bottom: 5px;
+            }
+
+            30% {
+                -moz-transform: translateY(-50%);
+            }
+
+            40% {
+                -moz-transform: translateY(0%);
+                padding-bottom: 6px;
+            }
+
+            50% {
+                -moz-transform: translateY(-30%);
+            }
+
+            70% {
+                -moz-transform: translateY(0%);
+                padding-bottom: 7px;
+            }
+
+            80% {
+                -moz-transform: translateY(-15%);
+            }
+
+            90% {
+                -moz-transform: translateY(0%);
+                padding-bottom: 8px;
+            }
+
+            95% {
+                -moz-transform: translateY(-10%);
+            }
+
+            97% {
+                -moz-transform: translateY(0%);
+                padding-bottom: 9px;
+            }
+
+            99% {
+                -moz-transform: translateY(-5%);
+            }
+
+            100% {
+                -moz-transform: translateY(0);
+                padding-bottom: 9px;
+                opacity: 1;
+            }
+        }
+
+        /* Opera 12.0 */
+
+        @-o-keyframes bounce {
+            0% {
+                -o-transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            5% {
+                -o-transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            15% {
+                -o-transform: translateY(0);
+                padding-bottom: 5px;
+            }
+
+            30% {
+                -o-transform: translateY(-50%);
+            }
+
+            40% {
+                -o-transform: translateY(0%);
+                padding-bottom: 6px;
+            }
+
+            50% {
+                -o-transform: translateY(-30%);
+            }
+
+            70% {
+                -o-transform: translateY(0%);
+                padding-bottom: 7px;
+            }
+
+            80% {
+                -o-transform: translateY(-15%);
+            }
+
+            90% {
+                -o-transform: translateY(0%);
+                padding-bottom: 8px;
+            }
+
+            95% {
+                -o-transform: translateY(-10%);
+            }
+
+            97% {
+                -o-transform: translateY(0%);
+                padding-bottom: 9px;
+            }
+
+            99% {
+                -o-transform: translateY(-5%);
+            }
+
+            100% {
+                -o-transform: translateY(0);
+                padding-bottom: 9px;
+                opacity: 1;
+            }
+        }
+
+        /* W3, Opera 12+, Firefox 16+ */
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            5% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            15% {
+                transform: translateY(0);
+                padding-bottom: 5px;
+            }
+
+            30% {
+                transform: translateY(-50%);
+            }
+
+            40% {
+                transform: translateY(0%);
+                padding-bottom: 6px;
+            }
+
+            50% {
+                transform: translateY(-30%);
+            }
+
+            70% {
+                transform: translateY(0%);
+                padding-bottom: 7px;
+            }
+
+            80% {
+                transform: translateY(-15%);
+            }
+
+            90% {
+                transform: translateY(0%);
+                padding-bottom: 8px;
+            }
+
+            95% {
+                transform: translateY(-7%);
+            }
+
+            97% {
+                transform: translateY(0%);
+                padding-bottom: 9px;
+            }
+
+            99% {
+                transform: translateY(-3%);
+            }
+
+            100% {
+                transform: translateY(0);
+                padding-bottom: 9px;
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <div class="fade_rule"></div>
+
+    <nav id="menu" class="menu">
+        <div class="actionsBar">
+            <div>
+                <button id="menuBtn" type="button"><i class="fas fa-bars"></i></button>
+                <h3 class="menuText">Dashboard</h3>
+            </div>
+        </div>
+        <ul class="optionsBar">
+            <li class="menuItem">
+                <a href="/nwcpnl" class="menuOption">
+                    <i class="fas fa-home"></i>
+                    <h5 class="menuText">Home</h5>
+                </a>
+            </li>
+            <li class="menuBreak">
+                <hr>
+            </li>
+            <li class="menuItem">
+                <button id="productManagerBtn" type="button" class="menuOption">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h5 class="menuText">Product Manager</h5>
+                </button>
+            </li>
+            <li class="menuItem">
+                <button id="constantManagerBtn" type="button" class="menuOption">
+                    <i class="fas fa-th-large"></i>
+                    <h5 class="menuText">Constant Manager</h5>
+                </button>
+            </li>
+        </ul>
+        <div class="menuUser">
+            <a href="#">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=344&q=80"
+                        alt="">
+                </div>
+                <h5 class="Username menuText">Alex</h5>
+                <p class="menuText"><i class="fas fa-chevron-right"></i></p>
+            </a>
+            <div class="userInfo">
+                <div>
+                    <h1><i class="fas fa-exclamation-circle"></i></h1>
+                    <p>User Info</p>
+                </div>
+            </div>
+        </div>
+        <div class="themeBar">
+            <div>
+                <button type="button" id="themeChangeBtn"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 40px 0;">
+        <div class="container">
+            <main class="grid">
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's how</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Read more</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Just do it...</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Stop here</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's how</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Read more</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Just do it...</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Stop here</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's how</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Read more</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Just do it...</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="btn btn-primary btn-block">Stop here</a>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <div class="fade_rule_2"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sitesoch</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate adipisci
+                                quia ab omnis id ipsum quae inventore </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/.js"></script>
+
+    <!--carrosel-->
+    <script src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js'></script>
+    <script src="carousel/carousel_script.js"></script>
+    <!--carrosel-->
+
+    <!--side menu-->
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="side-menu/side-menu_script.js"></script>
+    <!--side menu-->
+</body>
+</body>
+</html>
+</html>

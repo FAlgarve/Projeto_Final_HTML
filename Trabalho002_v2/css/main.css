@@ -1,0 +1,259 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .spacer {
+        width: 100%;
+        height: 100px;
+    }
+    
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    nav {
+        width: 100%;
+        background-color: #002e96;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        height: 5%;
+        width: 5%;
+        padding-left: 2%;
+        padding-top: 1%;
+        float: left;
+        margin-right: 60%;
+    }
+    
+    nav .nav-bar {
+        padding: 20px;
+        display: flex;
+    }
+    
+    nav .nav-bar .nav-bar_item {
+        list-style-type: none;
+        padding: 0px 20px;
+    }
+    
+    nav .nav-bar .nav-bar_item a {
+        position: relative;
+        display: block;
+        padding-bottom: 5px;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    nav .nav-bar .nav-bar_item a:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        transition: 0.1s ease-in-out;
+    }
+    
+    nav .nav-bar .nav-bar_item a:hover:after {
+        width: 100%;
+    }
+    
+    /*line*/
+    
+    .fade_rule {
+        height: 1px;
+        background-color: #E6E6E6;
+        width: 100%;
+        margin: 3% auto 2% auto;
+        background-image: linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -o-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -moz-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -webkit-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -ms-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, gray), color-stop(0.98, white));
+    }
+    
+    .fade_rule_2 {
+        height: 1px;
+        background-color: #E6E6E6;
+        width: 100%;
+        margin: 2% auto 3% auto;
+        background-image: linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -o-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -moz-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -webkit-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -ms-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+        background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, gray), color-stop(0.98, white));
+    }
+    /*line*/
+    /*grid*/
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+    }
+    
+    .grid>article {
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    }
+    
+    .grid>article img {
+        max-width: 100%;
+    }
+    
+    .grid .text {
+        padding: 20px;
+    }
+    
+    .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+    
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
+    
+    .btn-primary {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+    
+    .button {
+        width: 90%;
+        margin: 0 auto 5% auto;
+    }
+    
+    *,
+     ::after,
+     ::before {
+        box-sizing: border-box;
+    }
+    /*grid*/
+    /*footer*/
+    
+    .container {
+        max-width: 1170px;
+        margin: auto;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        text-align: justify;
+    }
+    
+    .footer {
+        background-color: #02091a;
+        padding: 70px 0;
+    }
+    
+    .footer-col {
+        width: 25%;
+        padding: 0 15px;
+    }
+    
+    .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    
+    .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    
+    @media(max-width: 767px) {
+        .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media(max-width: 574px) {
+        .footer-col {
+            width: 100%;
+        }
+    }
