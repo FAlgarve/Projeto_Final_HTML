@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <title>Pesquisa Filtrada</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../imgs/CodeSync_logo_V2_1_BG.svg" class="logo"></img>
+            <ul class="nav-bar">
+                <li class="nav-bar_item"><a href="../index.html">Inicio</a></li>
+                <li class="nav-bar_item"><a href="#">Mensagens</a></li>
+                <li class="nav-bar_item"><a href="#">Anuncios</a></li>
+                <li class="nav-bar_item"><a href="#">Perfil</a></li>
+                <li class="nav-bar_item"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-btn">
+        <div class="searchbar">
+            <div class="search">
+                <input type="text" id="searchinput" placeholder="Search">
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div class="buttons">
+            <div class="btn-group">
+                <button class="button active" id="showAll"> Show all</button>
+                <button class="button" id="Images"> Images</button>
+                <button class="button" id="Audio"> Audio</button>
+                <button class="button" id="Video"> Video</button>
+                <button class="button" id="Icons"> Icons</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="fade_rule"></div>
+
+
+    <!-- Content Card -->
+    <div class="container">
+        <main class="grid">
+            <article id="Images_card">
+                <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                </div>
+                <div style="display: none;">Images Imagens Imagem</div>
+            </article>
+
+            <article id="Video_card">
+                <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Here's how</a>
+                </div>
+                <div style="display: none;">Video Videos</div>
+            </article>
+
+            <article id="Icons_card">
+                <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Read more</a>
+                </div>
+                <div style="display: none;">Icons Icon</div>
+            </article>
+
+            <article id="Video_card">
+                <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Just do it...</a>
+                </div>
+                <div style="display: none;">Video Videos</div>
+            </article>
+
+            <article id="Images_card">
+                <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                </div>
+                <div style="display: none;">Images Imagens Imagem</div>
+            </article>
+
+            <article id="Audio_card">
+                <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Stop here</a>
+                </div>
+                <div style="display: none;">Audio</div>
+            </article>
+
+            <article id="Images_card">
+                <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                </div>
+                <div style="display: none;">Images Imagens Imagem</div>
+            </article>
+
+            <article id="Video_card">
+                <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Here's how</a>
+                </div>
+                <div style="display: none;">Video Videos</div>
+            </article>
+
+            <article id="Icons_card">
+                <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Read more</a>
+                </div>
+                <div style="display: none;">Icons Icon</div>
+            </article>
+
+            <article id="Video_card">
+                <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Just do it...</a>
+                </div>
+                <div style="display: none;">Video Videos</div>
+            </article>
+
+            <article id="Images_card">
+                <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Here's why</a>
+                </div>
+                <div style="display: none;">Images Imagens Imagem</div>
+            </article>
+
+            <article id="Audio_card">
+                <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo">
+                <div class="text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="button_card">
+                    <a href="#" class="btn btn-primary btn-block">Stop here</a>
+                </div>
+                <div style="display: none;">Audio</div>
+            </article>
+        </main>
+    </div>
+
+    <div class="fade_rule"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sitesoch</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate adipisci
+                                quia ab omnis id ipsum quae inventore </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
